@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Demo Application</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="transparent-logo.png" class="center">
+
+    <h1>Demo Application</h1>
+
+    <div id="entries">
+
+
+      <div class="entry">
+        <span id="version">
+          My version is {{ .AppVersion }} 
+        </span>
+      </div>
+      <div class="entry">
+        <span id="database">
+          I use a database at {{ .DatabaseHost }}:{{ .DatabasePort }}
+        </span>
+      </div>      
+
+      <div class="entry">
+        <span id="endpoints">
+          <ul>
+            <li>Liveness endpoint is at <a href='health/live'>health/live</a></li>
+            <li>Readiness endpoint is at <a href='health/ready'>health/ready</a></li>
+          </ul>
+        </span>
+      </div>
+
+  
+
+      <div class="entry">
+        <span id="finalAmount">
+          Table
+           	
+        </span>
+
+      </div>
+
+  
+
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
